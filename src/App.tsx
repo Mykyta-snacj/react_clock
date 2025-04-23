@@ -78,11 +78,11 @@ export class App extends React.Component<{}, State> {
 
   // this code stops the timer
   componentWillUnmount() {
-    if (this.clockNameTimerId !== null) {
+    if (this.clockNameTimerId !== undefined) {
       window.clearInterval(this.clockNameTimerId);
     }
 
-    if (this.tickId !== null) {
+    if (this.tickId !== undefined) {
       window.clearInterval(this.tickId);
     }
 
